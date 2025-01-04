@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farty-AI</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .binary-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url('https://i.imgur.com/T7b9Bkg.png') repeat;
+            opacity: 0.1;
+        }
+        h1 {
+            text-shadow: 0 0 10px #00ff00;
+        }
+        .description {
+            margin: 10px 0;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .upload-container {
+            margin: 20px;
+            padding: 20px;
+            border: 2px dashed #00ff00;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+            max-width: 400px;
+        }
+        .upload-container input {
+            display: none;
+        }
+        .upload-container label {
+            cursor: pointer;
+            color: #00ff00;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #00ff00;
+            text-decoration: none;
+        }
+        .ascii-logo {
+            white-space: pre;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="binary-background"></div>
+    <div class="ascii-logo">
+        _______   __        _______  ___________  ___  ___           __        __     
+       /"     "| /""\      /"      \("     _   ")|"  \/"  |         /""\      |" \    
+      (: ______)/    \    |:        |)__/  \\__/  \   \  /         /    \     ||  |   
+       \/    | /' /\  \   |_____/   )   \\_ /      \\  \/         /' /\  \    |:  |   
+       // ___)//  __'  \   //      /    |.  |      /   /         //  __'  \   |.  |   
+      (:  (  /   /  \\  \ |:  __   \    \:  |     /   /         /   /  \\  \  /\  |\  
+       \__/ (___/    \___)|__|  \___)    \__|    |___/         (___/    \___)(__\_|_) 
+                                                                                 
+    </div>
+    <h1>Farty-AI</h1>
+    <p class="description">"Transform your favorite scenes and songs with the magic of flatulence. Farty-AI: Where creativity stinks (in the best way)."</p>
+
+    <div class="upload-container">
+        <input type="file" id="file-upload">
+        <label for="file-upload">Upload Your File</label>
+        <p>Supported formats: MP3, MP4</p>
+    </div>
+
+    <div class="social-links">
+        <a href="https://twitter.com/FartyAI" target="_blank">Follow us on Twitter</a>
+        <a href="https://pumpfun.com/FartyAI" target="_blank">Pumpfun</a>
+    </div>
+</body>
+</html>
